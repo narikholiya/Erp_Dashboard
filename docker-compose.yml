@@ -1,0 +1,9 @@
+services:
+  erp-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: erp-dashboard
+    ports:
+      - "8080:80"
+    restart: unless-stopped
